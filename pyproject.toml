@@ -1,3 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deepfake-detection-inca"
+version = "0.1.0"
+description = "A deepfake detection system using advanced machine learning techniques"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "INCA Solutions", email = "contact@inca-solutions.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "torchvision==0.21.0",
+    "lightning==2.5.0",
+    "transformers==4.50.0",
+    "tqdm==4.67.1",
+    "timm==1.0.14",
+    "matplotlib==3.10.0",
+    "seaborn==0.13.2",
+    "scikit-learn==1.6.1",
+    "rich==13.9.4",
+    "wandb==0.19.4",
+    "pydantic>=2.9.2",
+    "fire==0.7.0",
+    "peft==0.14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff==0.9.3",
+    "ipykernel==6.29.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/INCA-Solutions/deepfake-detection-inca"
+Repository = "https://github.com/INCA-Solutions/deepfake-detection-inca"
+Issues = "https://github.com/INCA-Solutions/deepfake-detection-inca/issues"
+
+[project.scripts]
+deepfake-detect = "src.run:main"
+deepfake-inference = "inference:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
 [tool.ruff]
 line-length = 120
 
