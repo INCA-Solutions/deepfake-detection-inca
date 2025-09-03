@@ -9,7 +9,7 @@ matplotlib==3.10.0 # visualization
 seaborn==0.13.2  # visualization
 scikit-learn==1.6.1 # metrics
 rich==13.9.4 # logging
-wandb==0.19.4 # logging
+wandb==0.21.3 # logging
 pydantic==2.9.2 # config
 ruff==0.9.3 # formatting
 fire==0.7.0 # CLI
