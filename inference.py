@@ -3,8 +3,8 @@ from huggingface_hub import hf_hub_download
 from lightning.fabric import Fabric
 from PIL import Image
 
-from src.config import Config
-from src.model.dfdet import DeepfakeDetectionModel
+from deepfake_detection_inca.config import Config
+from deepfake_detection_inca.model.dfdet import DeepfakeDetectionModel
 
 DEVICES = [0]
 

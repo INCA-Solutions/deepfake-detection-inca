@@ -59,7 +59,7 @@ deepfake-detect = "src.run:main"
 deepfake-inference = "inference:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = ["deepfake_detection_inca"]
 
 [tool.ruff]
 line-length = 120

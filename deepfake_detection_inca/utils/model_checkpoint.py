@@ -3,7 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 from lightning.pytorch import callbacks as pl_callbacks
 from typing_extensions import override
 
-from src.utils import logger
+from deepfake_detection_inca.utils import logger
 
 
 class ModelCheckpointParallel(pl_callbacks.ModelCheckpoint):

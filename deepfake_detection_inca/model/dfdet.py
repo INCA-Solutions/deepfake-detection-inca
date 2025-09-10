@@ -16,13 +16,13 @@ from torch import optim
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torchmetrics import CatMetric
 
-from src import metrics, plots
-from src.config import Backbone, Config, Head
-from src.dataset.base import BaseDataset
-from src.heads import head
-from src.loss import Loss, LossInputs, LossOutputs
-from src.losses import unifalign
-from src.utils import logger
+from deepfake_detection_inca import metrics, plots
+from deepfake_detection_inca.config import Backbone, Config, Head
+from deepfake_detection_inca.dataset.base import BaseDataset
+from deepfake_detection_inca.heads import head
+from deepfake_detection_inca.loss import Loss, LossInputs, LossOutputs
+from deepfake_detection_inca.losses import unifalign
+from deepfake_detection_inca.utils import logger
 
 
 class OutputsForMetrics(nn.Module):
@@ -155,12 +155,12 @@ class DeepfakeDetectionModel(pl.LightningModule):
 
         if "clip" in backbone or "FaRL" in backbone:
             if Head.needs_patches(self.config.head):
-                from src.encoders.clip_encoder import CLIPEncoderPatches
+                from deepfake_detection_inca.encoders.clip_encoder import CLIPEncoderPatches
 
                 self.feature_extractor = CLIPEncoderPatches(backbone)
 
             else:
-                from src.encoders.clip_encoder import CLIPEncoder
+                from deepfake_detection_inca.encoders.clip_encoder import CLIPEncoder
 
                 self.feature_extractor = CLIPEncoder(backbone)
 

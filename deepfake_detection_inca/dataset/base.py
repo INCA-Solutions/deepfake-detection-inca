@@ -7,8 +7,8 @@ from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from torchvision.transforms import v2 as T
 
-from src.config import Config
-from src.utils.logger import print, print_info
+from deepfake_detection_inca.config import Config
+from deepfake_detection_inca.utils.logger import print, print_info
 
 
 class BaseDataset(Dataset):
