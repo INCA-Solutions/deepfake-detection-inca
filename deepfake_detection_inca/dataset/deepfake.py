@@ -9,9 +9,9 @@ from PIL import Image, ImageFile
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from src.config import Config
-from src.utils import logger
-from src.utils.logger import print
+from deepfake_detection_inca.config import Config
+from deepfake_detection_inca.utils import logger
+from deepfake_detection_inca.utils.logger import print
 
 from .base import BaseDataModule, BaseDataset, init_augmentations
 

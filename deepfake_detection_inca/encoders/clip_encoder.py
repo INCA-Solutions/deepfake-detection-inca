@@ -13,7 +13,7 @@ class CLIPEncoder(nn.Module):
         2. openai/clip-vit-base-patch32 | 768 features
         3. openai/clip-vit-large-patch14 | 1024 features
 
-        See more in src/config.py
+        See more in deepfake_detection_inca/config.py
         """
 
         super().__init__()

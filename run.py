@@ -15,12 +15,12 @@ from lightning.pytorch import callbacks as pl_callbacks
 from lightning.pytorch import loggers as pl_loggers
 from rich import traceback
 
-from src import dataset as datasets
-from src import model as models
-from src.config import Backbone, Config, Head, load_config
-from src.utils import files
-from src.utils.checks import checks
-from src.utils.model_checkpoint import ModelCheckpointParallel
+from deepfake_detection_inca import dataset as datasets
+from deepfake_detection_inca import model as models
+from deepfake_detection_inca.config import Backbone, Config, Head, load_config
+from deepfake_detection_inca.utils import files
+from deepfake_detection_inca.utils.checks import checks
+from deepfake_detection_inca.utils.model_checkpoint import ModelCheckpointParallel
 
 traceback.install()
 
