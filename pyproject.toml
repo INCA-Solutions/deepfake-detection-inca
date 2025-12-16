@@ -37,7 +37,7 @@ dependencies = [
     "seaborn==0.13.2",
     "scikit-learn==1.6.1",
     "rich==13.9.4",
-    "wandb==0.21.3",
+    "wandb==0.23.1",
     "pydantic>=2.9.2",
     "fire==0.7.0",
     "peft==0.14.0",
