@@ -35,7 +35,7 @@ dependencies = [
     "timm==1.0.14",
     "matplotlib>=3.10.8",
     "seaborn==0.13.2",
-    "scikit-learn==1.6.1",
+    "scikit-learn==1.8.0",
     "rich==13.9.4",
     "wandb==0.23.1",
     "pydantic>=2.9.2",
