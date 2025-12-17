@@ -5,7 +5,7 @@ lightning==2.5.0
 transformers==4.57.1
 tqdm==4.67.1 # progress bar
 timm==1.0.14 # torch models
-matplotlib==3.10.0 # visualization
+matplotlib>=3.10.8 # visualization
 seaborn==0.13.2  # visualization
 scikit-learn==1.6.1 # metrics
 rich==13.9.4 # logging
