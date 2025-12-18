@@ -1,13 +1,13 @@
 torch==2.9.1
 torchaudio==2.9.1
-torchvision==0.23.0
+torchvision==0.24.1
 lightning==2.5.0 
 transformers==4.57.1
 tqdm==4.67.1 # progress bar
 timm==1.0.14 # torch models
-matplotlib==3.10.0 # visualization
+matplotlib>=3.10.8 # visualization
 seaborn==0.13.2  # visualization
-scikit-learn==1.6.1 # metrics
+scikit-learn==1.8.0 # metrics
 rich==13.9.4 # logging
 wandb==0.23.1 # logging
 pydantic==2.9.2 # config
